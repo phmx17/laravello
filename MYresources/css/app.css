@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+
+.header-btn {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  @apply rounded-sm px-5 py-1 text-sm font-bold outline-none whitespace-no-wrap;
+}
+.header-btn:focus {
+  @apply outline-none;
+}
+.header-btn:hover {
+  @apply opacity-75;
+}
+
+@tailwind utilities;
+
+.appear-enter-active, .appear-leave-active {
+  transition: all 50ms ease-in;
+}
+.appear-enter, .appear-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+} 
+.list {
+  min-width: 230px;
+  width: 230px;
+}
